@@ -1,0 +1,56 @@
+.col-md-12 {
+  background-color: black;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.topBar {
+  color: white;
+  padding: 0px margin-top 0px;
+}
+
+.topBar ul {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  margin: 0px;
+}
+.topBar li {
+  list-style: none;
+}
+
+.logoBox {
+  display: flex;
+  padding: 10px;
+}
+.searchBox {
+  display: flex;
+  padding: 10px;
+}
+.searchBox input:focus {
+  outline: none;
+}
+.searchBox input {
+  border: none;
+  width: 90%;
+  background-color: lightgray;
+}
+.searchBox form {
+  border-radius: 60px;
+  padding: 10px;
+  background-color: lightgrey;
+  width: 100%;
+}
+.iconBox {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  padding: 10px;
+}
+@media (max-width: 576px) {
+  .topBar :nth-child(2) {
+    display: none;
+  }
+  .topBar :nth-child(3) {
+    display: none;
+  }
+}
