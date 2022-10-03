@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
   border: 1px solid red;
 }
 body {
@@ -26,8 +25,10 @@ body {
 
 .logoBox {
   display: flex;
+
   padding: 10px;
 }
+
 .searchBox {
   display: flex;
   padding: 10px;
@@ -42,19 +43,32 @@ body {
 }
 .searchBox form {
   border-radius: 60px;
-  padding: 10px;
+  padding: 14px;
   background-color: lightgrey;
   width: 100%;
 }
-.iconBox {
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 25px;
-  padding: 10px;
+.loginButton {
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: none;
 }
-main {
-  margin-top: 30px;
+.loginButton i {
+  font-weight: bolder;
+  font-size: 18px;
+  margin-right: 17px;
 }
+.buttonEffect {
+  border-style: solid;
+  border: none;
+  border-width: 2px;
+}
+.buttonEffect:hover {
+  background-color: #f5f5f5;
+  color: black;
+}
+
 .box1 {
   display: flex;
   height: 99%;
@@ -67,7 +81,6 @@ main {
   justify-content: center;
   height: 43%;
   overflow: hidden;
-  margin-bottom: 15px;
 }
 .box2 img {
   width: 100%;
@@ -87,7 +100,6 @@ main {
   height: 57%;
 
   overflow: hidden;
-  margin-bottom: 15px;
 }
 .box4 img {
   width: 100%;
@@ -114,7 +126,6 @@ section p {
 .card-body {
   background: gray;
   height: 300px;
-  max-resolution: 70px;
 }
 .card-body p {
   font-size: 16px;
@@ -124,4 +135,111 @@ section p {
   font-size: 18px;
   margin-top: 10px;
   font-weight: bolder;
+}
+.card-left {
+  height: 369px;
+}
+
+.site-footer {
+  background-color: #f5f5f5;
+}
+.site-footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.site-footer p {
+  font-size: 14px;
+}
+.site-footer span {
+  font-weight: bold;
+  font-size: 14px;
+}
+.site-footer ul {
+  list-style: none;
+  font-size: 12px;
+}
+.site-footer a {
+  text-decoration: none;
+  color: black;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
+.site-footer li {
+  margin: 12px 0px 0px 0px;
+}
+.site-footer .blackButton {
+  font-weight: bold;
+  background-color: black;
+  padding: 10px;
+  border-radius: 34px;
+  width: 143px;
+  font-size: 13px;
+}
+.site-footer .blackButton:hover {
+  color: #fff;
+  background-color: grey;
+}
+.site-footer .socialButton {
+  border-radius: 50%;
+  background-color: #f5f5f5;
+}
+.site-footer .socialButton i {
+  color: black;
+}
+
+.site-footer .borderEffect {
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 2px;
+}
+.site-footer .borderEffect:hover {
+  border-style: solid;
+  border-color: grey;
+  border-width: 2px;
+}
+
+.site-footer img {
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 2px;
+}
+.site-footer .whiteButton {
+  font-weight: bold;
+  background-color: white;
+  color: grey;
+  text-align: center;
+  padding-top: 2px;
+  border-radius: 120px;
+  width: 110px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.site-footer .whiteButton span {
+  font-size: 12px;
+
+  font-style: normal;
+  font-weight: bold;
+}
+.copyright {
+  display: block;
+
+  text-transform: capitalize;
+}
+.copyright:before {
+  content: "\00a9";
+}
+.informationBar {
+  font-size: 10px;
+}
+@media (min-width: 575px) {
+  .searchBox input {
+    border: none;
+    width: 93%;
+    background-color: lightgray;
+  }
+  .logoBox img {
+    margin-left: 50px;
+  }
 }
