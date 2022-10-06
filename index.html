@@ -26,7 +26,7 @@
     <title>Ikea</title>
   </head>
   <body>
-    <header>
+    <header class="site-header">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-md-12 topBar">
@@ -68,8 +68,8 @@
               Logga in/Registrera dig
             </button>
             <i class="bi bi-person me-4 mt-3 d-md-none"></i>
-            <i class="bi bi-heart-fill me-4 mt-3 me-md-0 mt-3 mt-md-0"></i
-            ><i class="bi bi-basket3-fill me-4 me-md-0 mt-3 mt-md-0"></i>
+            <i class="bi bi-heart me-4 mt-3 me-md-0 mt-3 mt-md-0"></i
+            ><i class="bi bi-basket3 me-4 me-md-0 mt-3 mt-md-0"></i>
             <i class="bi bi-list mt-3 d-md-none"></i>
           </div>
         </div>
@@ -77,39 +77,62 @@
       <div class="container-md">
         <div class="row">
           <div
-            class="col-1 d-none col-md-3 d-md-flex justify-content-md-around"
+            class="col-1 d-none col-md-3 d-md-flex justify-content-md-around p-md-0 pt-md-4"
           >
-            <a href="">Just nu</a><a href="">Produkter</a><a href="">Rum</a>
+            <a href="" class="m-0">Just nu</a><a href="">Produkter</a
+            ><a href="">Rum</a>
           </div>
 
           <div class="col-1 d-none col-md-6 d-md-flex"></div>
 
-          <divd
-            class="col-12 d-flex justify-content-evenly col-md-3 d-md-flex justify-content-md-evenly"
+          <div
+            class="col-12 d-flex justify-content-start col-md-3 d-md-flex justify-content-md-evenly p-md-0 pt-md-4"
           >
-            <i class="bi bi-truck">25228</i>
-            <i class="bi bi-bank">Helsingborg</i>
-          </divd>
+            <i class="bi bi-truck"
+              ><span class="m-3 me-5 pe-5 me-md-0 pe-md-0">252 28</span></i
+            >
+            <i class="bi bi-bank"><span class="m-3">Helsingborg</span></i>
+          </div>
         </div>
         <hr class="d-none d-md-block" />
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero pt-5">
         <div class="container">
-          <h2>Hitta dina favoriter bland våra erbjudanden just nu!</h2>
-          <p>
-            Se alla våra erbjudanden online eller i ditt närmaste varuhus.
-            Gäller för dig som är, eller blir, IKEA Family medlem.
-          </p>
           <div class="row">
+            <div class="col-12 col-md-10 d-md-block">
+              <h2>Hitta dina favoriter bland våra erbjudanden just nu!</h2>
+              <p>
+                Se alla våra erbjudanden online eller i ditt närmaste varuhus.
+                Gäller för dig som är, eller blir, IKEA Family medlem.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-2 pt-3 d-flex justify-content-end">
+              <span
+                class="d-none d-md-block mt-md-2 p-md-2 whiteButton borderEffect w-100 pt-md-2"
+                >Se höstens nyheter</span
+              >
+            </div>
             <div class="col-12 mt-3 col-md-6">
               <div class="box1">
                 <img
                   src="https://www.ikea.com/ext/ingkadam/m/65a4119d8a56f9ad/original/PH188842.jpg?f=xxl"
                   alt=""
+                  class="w-100"
                 />
+                <div class="square">
+                  <div>
+                    Nytt<i
+                      class="bi bi-caret-right ms-3 ps-3 ms-md-3 ps-md-5"
+                    ></i>
+                  </div>
+                  <div>Tuvsäv</div>
+                  <div>Kuddfodral</div>
+                  <div>79:-</div>
+                </div>
               </div>
             </div>
             <div class="col-6 mt-3 col-md-3">
@@ -117,12 +140,14 @@
                 <img
                   src="https://www.ikea.com/images/ac/ee/aceec671b599066adb85fc0a334876ee.jpg?f=xs"
                   alt=""
+                  class="w-100"
                 />
               </div>
               <div class="box3">
                 <img
                   src="https://www.ikea.com/ext/ingkadam/m/5a54e8bcf818563e/original/PH167276-crop001.jpg?f=xs"
                   alt=""
+                  class="w-100"
                 />
               </div>
             </div>
@@ -131,12 +156,14 @@
                 <img
                   src="https://www.ikea.com/ext/ingkadam/m/1165fa5d6499f6ed/original/PH175135-crop001.jpg?f=xs"
                   alt=""
+                  class="w-100"
                 />
               </div>
               <div class="box5 mt-3 mb-1">
                 <img
                   src="https://www.ikea.com/ext/ingkadam/m/6f4233ba51b4067f/original/PH160475-crop003.jpg?f=xs"
                   alt=""
+                  class="w-100"
                 />
               </div>
             </div>
@@ -162,6 +189,11 @@
                     favoriter få flytta hem till dig. Till exempel nyheten
                     VALLASÅN handduk, 40x70 cm 35:-.
                   </p>
+                  <div class="circle">
+                    <div>
+                      <a href=""><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -179,6 +211,11 @@
                     favoriter få flytta hem till dig. Till exempel nyheten
                     VALLASÅN handduk, 40x70 cm 35:-.
                   </p>
+                  <div class="circle">
+                    <div>
+                      <a href=""><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -196,29 +233,40 @@
                     favoriter få flytta hem till dig. Till exempel nyheten
                     VALLASÅN handduk, 40x70 cm 35:-.
                   </p>
+                  <div class="circle">
+                    <div>
+                      <a href=""><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section>
-        <div class="container mb-5">
-          <div class="row">
-            <div class="col-12 col-md-12 mt-3">
-              <div class="card flex-column flex-md-row">
-                <img
-                  src="https://www.ikea.com/images/0c/54/0c5475b5f45f9d52e17a6bb3c9fa65ac.jpg?f=xl"
-                  alt=""
-                  class="card-img-top"
-                />
-                <div class="card-body card-left">
-                  <h5 class="card-title">Inspireras av höstens nyheter</h5>
-                  <p class="card-text">
-                    Hos oss på IKEA finns något nytt, för alla. Låt säsongens
-                    favoriter få flytta hem till dig. Till exempel nyheten
-                    VALLASÅN handduk, 40x70 cm 35:-.
-                  </p>
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-12 col-md-12 mt-3">
+                <div class="card flex-column flex-md-row">
+                  <img
+                    src="https://www.ikea.com/images/0c/54/0c5475b5f45f9d52e17a6bb3c9fa65ac.jpg?f=xl"
+                    alt=""
+                    class="card-img-top"
+                  />
+                  <div class="card-body card-left">
+                    <h5 class="card-title mt-3">
+                      Inspireras av höstens nyheter
+                    </h5>
+                    <p class="card-text">
+                      Hos oss på IKEA finns något nytt, för alla. Låt säsongens
+                      favoriter få flytta hem till dig. Till exempel nyheten
+                      VALLASÅN handduk, 40x70 cm 35:-.
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-secondary btn-sm mb-4 blackButton mt-5"
+                    >
+                      Ladda ner appen
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
